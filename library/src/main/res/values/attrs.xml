@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RulerView">
+        <attr format="float|reference" name="rv_defaultValue" />              <!-- 默认值 -->
+        <attr format="float|reference" name="rv_minValue" />                  <!-- 最小值 -->
+        <attr format="float|reference" name="rv_maxValue" />                  <!-- 最大值 -->
+        <attr format="float|reference" name="rv_spanValue" />                 <!-- 精度，最小支持 0.1 -->
+        <attr format="dimension|reference" name="rv_itemSpacing" />           <!-- 每个刻度间的宽度 -->
+        <attr format="dimension|reference" name="rv_minLineHeight" />         <!-- 最短刻度线长度 -->
+        <attr format="dimension|reference" name="rv_maxLineHeight" />         <!-- 最长刻度线长度 -->
+        <attr format="dimension|reference" name="rv_middleLineHeight" />      <!-- 中间刻度线长度 -->
+        <attr format="dimension|reference" name="rv_minLineWidth" />          <!-- 最短刻度线宽度 -->
+        <attr format="dimension|reference" name="rv_maxLineWidth" />          <!-- 最长刻度线宽度 -->
+        <attr format="dimension|reference" name="rv_middleLineWidth" />       <!-- 中间刻度线宽度 -->
+        <attr format="color|reference" name="rv_scaleTextColor" />            <!-- 刻度盘文字颜色 -->
+        <attr format="color|reference" name="rv_minLineColor" />              <!-- 最短刻度线颜色 -->
+        <attr format="color|reference" name="rv_maxLineColor" />              <!-- 最大刻度线颜色 -->
+        <attr format="color|reference" name="rv_middleLineColor" />           <!-- 中间刻度线颜色 -->
+        <attr format="dimension|reference" name="rv_scaleTextSize" />         <!-- 刻度盘文字大小 -->
+        <attr format="dimension|reference" name="rv_textMarginTop" />         <!-- 刻度盘文字距离刻度边缘距离 -->
+        <attr format="color|reference" name="rv_indcatorColor" />             <!-- 指示器颜色 -->
+        <attr format="dimension|reference" name="rv_indcatorWidth" />         <!-- 指示器宽度，形状为三角时不起作用 -->
+        <attr format="dimension|reference" name="rv_indcatorHeight" />        <!-- 指示器高度，形状为三角时不起作用 -->
+        <attr format="enum|reference" name="rv_indcatorType">                 <!-- 指示器形状 -->
+            <enum name="line" value="1" />                                    <!-- 线 -->
+            <enum name="triangle" value="2" />                                <!-- 三角 -->
+        </attr>
+        <attr format="enum|reference" name="rv_strokeCap">                    <!-- 刻度线线帽 -->
+            <enum name="round" value="1" />                                   <!-- 圆角 -->
+            <enum name="butt" value="0" />                                    <!-- 无圆角 -->
+            <enum name="square" value="2" />                                  <!-- 矩形 -->
+        </attr>
+        <attr format="color|reference" name="rv_resultTextColor" />           <!-- 结果文字颜色 -->
+        <attr format="color|reference" name="rv_unitTextColor" />             <!-- 单位文字颜色 -->
+        <attr format="dimension|reference" name="rv_resultTextSize" />        <!-- 结果文字大小 -->
+        <attr format="dimension|reference" name="rv_unitTextSize" />          <!-- 单位文字大小 -->
+        <attr format="string|reference" name="rv_unit" />                     <!-- 单位 -->
+        <attr format="boolean|reference" name="rv_showResult" />              <!-- 是否显示结果 -->
+        <attr format="boolean|reference" name="rv_showUnit" />                <!-- 是否显示单位 -->
+        <attr format="boolean|reference" name="rv_alphaEnable" />             <!-- 是否刻度渐变 -->
+    </declare-styleable>
+</resources>
